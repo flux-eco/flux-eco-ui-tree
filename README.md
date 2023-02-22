@@ -67,13 +67,13 @@ The **FluxEcoUiTree** component is a UI tree component that is part of the flux-
 ## Usage
 
 ``` javascript
-import {FluxEcoUiTreeApi} from "(...)/flux-eco-ui-tree/src/Adapters/Api/FluxEcoUiTreeApi.mjs";
+import {FluxUiTreeApi} from "(...)/flux-eco-ui-tree/src/Adapters/Api/FluxUiTreeApi.mjs";
 
 const statePublisher = /* create a StatePublisher object */;
 const treeStateManager = /* create a TreeStateManager object */;
 const treeElementRenderer = /* create a TreeElementRenderer object */;
 
-const fluxEcoUiTreeApi = await FluxEcoUiTreeApi.new(statePublisher, treeStateManager, treeElementRenderer);
+const fluxEcoUiTreeApi = await FluxUiTreeApi.new(statePublisher, treeStateManager, treeElementRenderer);
 const renderTreeOnDataProvidedCallback = await fluxEcoUiTreeApi.createRenderTreeOnNodesProvidedCallback(
     document.getElementById('tree-container'),
     'tree-1',
@@ -96,11 +96,11 @@ renderTreeOnDataProvidedCallback(treeNodes);
 
 The code above shows how to create a FluxUiTree component and render it in a container element. In this example, the createRenderTreeOnNodesProvidedCallback() function is used to create a callback that will render the tree when the data is provided. The renderTreeOnDataProvidedCallback() function is then called when the tree data is received from an external API.
 
-## FluxEcoUiTreeApi
+## FluxUiTreeApi
 The main API class for the FluxEcoUiTree component.
 
-### new(statePublisher, treeStateManager, treeElementRenderer): FluxEcoUiTreeApi
-Creates a new FluxEcoUiTreeApi instance.
+### new(statePublisher, treeStateManager, treeElementRenderer): FluxUiTreeApi
+Creates a new FluxUiTreeApi instance.
 - **statePublisher** - A **StatePublisher** object used to publish and subscribe to state changes.
 - **treeStateManager** - A **TreeStateManager** object used to manage the tree state.
 - **treeElementRenderer** - A **TreeElementRenderer** object used to render the tree in the UI.

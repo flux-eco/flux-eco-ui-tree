@@ -44,9 +44,9 @@
 
 
 /**
- * @type FluxEcoUiTreeApi
+ * @type FluxUiTreeApi
  */
-export class FluxEcoUiTreeApi {
+export class FluxUiTreeApi {
     name = "flux-eco-ui-tree";
     /**
      * @var {StatePublisher}
@@ -81,12 +81,12 @@ export class FluxEcoUiTreeApi {
      * @param {StatePublisher} statePublisher
      * @param {TreeStateManager} treeStateManager
      * @param {TreeElementRenderer} treeElementRenderer
-     * @return {FluxEcoUiTreeApi}
+     * @return {FluxUiTreeApi}
      */
     static async new(statePublisher,
                      treeStateManager,
                      treeElementRenderer) {
-        return new FluxEcoUiTreeApi(statePublisher, treeStateManager, treeElementRenderer)
+        return new FluxUiTreeApi(statePublisher, treeStateManager, treeElementRenderer)
     }
 
     /**
