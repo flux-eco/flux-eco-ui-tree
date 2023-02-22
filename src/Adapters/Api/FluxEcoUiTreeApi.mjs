@@ -12,7 +12,7 @@
  * @property {function(subscriberId:string, stateId:string, function(stateId:string, oldState:object, newState: object))} subscribe
  * @property {function(subscriberId:string, stateId:string)} unsubscribe
  *
- * Note: There are existing implementations of StatePublisher - flux-eco-ui-state-broadcaster - available in the flux-eco-system,
+ * Note: There is an existing implementation of StatePublisher - flux-eco-ui-state-broadcaster - available in the flux-eco-system,
  * but you are free to implement your own if desired.
  */
 
@@ -29,7 +29,7 @@
  * @property {function(treeId: string): TreeState} getState
  * @property {function(subscriberId: string, treeId: string, callback: function(treeId:string, oldState:object, newState: object)): Promise<void>} subscribeToStateChanged
  *
- * Note: There are existing implementations of TreeStateManager - flux-eco-ui-tree-state - available in the flux-eco-system,
+ * Note: There is an existing implementation of TreeStateManager - flux-eco-ui-tree-state - available in the flux-eco-system,
  * but you are free to implement your own if desired.
  */
 
@@ -38,7 +38,7 @@
  * @property {string} name
  * @property {function(parentElement: object, treeState: TreeState)} render
  *
- * Note: There are existing implementations of TreeElementRenderer - flux-eco-ui-tree-element - available in the flux-eco-system,
+ * Note: There is an existing implementation of TreeElementRenderer - flux-eco-ui-tree-element - available in the flux-eco-system,
  * but you are free to implement your own if desired.
  */
 
